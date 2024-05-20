@@ -19,6 +19,8 @@ database()
 // router
 app.use("/api/product", productRouter)
 
+
+
 app.listen(port, ()=>{
     console.log(' ');
 })
