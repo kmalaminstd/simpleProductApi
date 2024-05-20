@@ -3,7 +3,7 @@ const database = require("./config/db")
 const productRouter = require("./routes/product.route")
 const app = express()
 
-const port = "simple-product-ix28huupt-kmalaminstds-projects.vercel.app"
+const port = 3000
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
