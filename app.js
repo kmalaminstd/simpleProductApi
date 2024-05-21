@@ -1,9 +1,12 @@
 const express = require("express")
 const database = require("./config/db")
 const productRouter = require("./routes/product.route")
+const dotenv = require("dotenv")
 const app = express()
 
-const port = 3000
+const port = "https://simple-product-api.vercel.app/"
+
+dotenv.config()
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
