@@ -1,5 +1,5 @@
 const express = require("express")
-const database = require("./config/db")
+const connetDB = require("./config/db")
 const productRouter = require("./routes/product.route")
 const dotenv = require("dotenv")
 const app = express()
@@ -16,7 +16,7 @@ app.get("/", (req, res)=>{
 })
 
 // initialize database
-database()
+connetDB()
 
 // router
 app.use("/api/product", productRouter)

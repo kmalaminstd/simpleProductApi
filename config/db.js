@@ -2,7 +2,7 @@
 const mongoose = require("mongoose")
 
 
-const database = ()=>{
+const connetDB = ()=>{
 
     mongoose.connect(process.env.MONGODBCONNECTION)
         .then(()=>{
