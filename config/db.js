@@ -13,4 +13,4 @@ const connetDB = ()=>{
 
 }
 
-module.exports = database
+module.exports = connetDB
