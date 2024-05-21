@@ -26,3 +26,5 @@ app.use("/api/product", productRouter)
 app.listen(process.env.PORT, ()=>{
     console.log(' ');
 })
+
+module.exports = app
